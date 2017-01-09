@@ -11,7 +11,7 @@
 @implementation CTMediator (ModulizedDemoDetail)
 
 - (UIViewController *)detailViewController {
-    return [self performTarget:@"Detail" action:@"viewController" params:@{} shouldCacheTarget:NO];
+    return [self performTarget:@"Detail" action:@"viewController" params:@{@"content": @"Hello world"} shouldCacheTarget:NO];
 }
 
 @end
